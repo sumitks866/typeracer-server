@@ -3,7 +3,7 @@ const cors = require('cors')
 const http = require('http')
 const socketio = require('socket.io')
 const axios = require('axios')
-const port = 4000
+const port = process.env.port || 4000
 
 const Room = require('./Room')
 
